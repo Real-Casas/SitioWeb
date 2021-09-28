@@ -8,11 +8,20 @@
 /*======================================
 //--//-->   STYLES GENERALES
 ======================================*/
-i[class^="icofont-"] { 
-  /* color:red ; */
-  font-size: 21px;
-  /* margin-top: 50px; */
-  
+
+
+:root{
+  --colorPrincipal:#0CA65E;
+  --colorFuete:#07663A;
+  --colorSueve1:#10E682;
+  --colorSueve2:#11F289;
+  --colorSecundario:#11F289;
+  --colorAnalogo1:#2EF2A2;
+  --colorAnalogo2:#35DBA1;
+  --colorAnalogo3:#2EF2B9;
+  --colorAnalogo4:#2CE8BC;
+
+
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -37,8 +46,8 @@ a:hover {
   color: #2eca6a;
   text-decoration: none;
 }
-a img{
-  width: 50%;
+nav img{
+  width: 45%;
 }
 .link-two {
   color: #000000;
@@ -527,8 +536,8 @@ a img{
 .navbar-default {
   transition: all .5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  /* padding-top: 28px;
+  padding-bottom: 28px; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -553,7 +562,7 @@ a img{
 .navbar-default.navbar-reduce .nav-item {
   position: relative;
   padding-right: 10px;
-  /* padding-bottom: 8px; */
+  padding-bottom: 8px;
   margin-left: 0;
 }
 
@@ -1660,6 +1669,16 @@ footer .credits {
   color: #ffffff;
 }
 
+.btn-secundario{
+  background-color:black;
+  color: #C3F8B4;
+}
+.btn-secundario:hover{
+  background-color:var(--colorAnalogo4);
+  color: #ffffff;
+}
+
+
 @media (min-width: 576px) {
   .intro .intro-title {
     font-size: 3.5rem;
@@ -2025,9 +2044,10 @@ footer .credits {
   .box-collapse .title-box-d {
     left: 35px;
   }
-  a img{
+  nav img{
     width: 30%;
   }
+
 
   .box-collapse .title-box-d .title-d {
     font-size: 1.3rem;
